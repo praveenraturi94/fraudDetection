@@ -1,0 +1,16 @@
+package rules
+import com.renovite.model.Employee;
+
+rule "age"
+when 
+Employee(age < 10)
+then 
+System.out.println("age is low");
+end
+
+rule "name"
+when 
+Employee(name.length() > 10)
+then 
+System.out.println("length of name is not appropriate it is exceeding the limit");
+end

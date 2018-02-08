@@ -1,0 +1,9 @@
+package rules
+import com.renovite.model.Address;
+
+rule "city"
+when 
+Address(city.length() > 10)
+then 
+System.out.println("length of city is not appropriate it is exceeding the limit");
+end

@@ -10,7 +10,7 @@ end
 
 rule "name"
 when 
-Employee(name.length() > 10)
+Employee(name.length() > 50)
 then 
 System.out.println("length of name is not appropriate it is exceeding the limit");
 end
